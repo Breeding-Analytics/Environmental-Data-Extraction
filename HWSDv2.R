@@ -71,7 +71,7 @@ ini_HWSD2 <- function(data_path = './data/'){
 #' HWSD2_LAYERS table). The depth of the top and bottom of each layer is defined in
 #' the TOPDEP and BOTDEP columns, respectively. 
 
-get_HWSD2 <- function(df, con, x = 'longitude', y = 'latitude', component = 1, layer = 'D1') {
+get_HWSD2 <- function(df, con, x = 'longitude', y = 'latitude', sequence = 1, layer = 'D1') {
   total_loc <- nrow(df)
   
   df$seq_id <- 1:total_loc
@@ -102,7 +102,7 @@ get_HWSD2 <- function(df, con, x = 'longitude', y = 'latitude', component = 1, l
   ids <- paste(unique(na.omit(df$smu_id)), collapse = ',')
 
   #' build up SQL statement conditions
-  SEQ <- ifelse(component %in% 1:12, paste('SEQUENCE = ', component), 'SEQUENCE > 0')
+  SEQ <- ifelse(sequence %in% 1:12, paste('SEQUENCE = ', sequence), 'SEQUENCE > 0')
   LYR <- ifelse(layer %in% paste0('D', 1:7), paste0('LAYER = "', layer, '"'), 'LAYER like "%"')
   
   #' retrieve soil data for the selected soil component and depth layer
