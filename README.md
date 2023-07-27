@@ -10,11 +10,15 @@ You can retrieve TerraClimate data using the QBMS R package in two modes: [Onlin
 ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate covering the period from January 1940 to the present. ERA5 is produced by the Copernicus Climate Change Service (C3S) at ECMWF.
 
 ## Soil Databases
+* __Harmonized World Soil Database version 2.0:__ <br/>
+The [HWSD v2.0](https://gaez.fao.org/pages/hwsd) is a unique global soil inventory providing information on the morphological, chemical, and physical properties of soils at approximately 1 km resolution. Its main objective is to serve as a basis for prospective studies on agro-ecological zoning, food security, and climate change.
+
+> __Reference:__ FAO & IIASA. 2023. _Harmonized World Soil Database version 2.0_. Rome and Laxenburg. [https://doi.org/10.4060/cc3823en](https://doi.org/10.4060/cc3823en). 
 
 ## Tools
 * __[EnvRtype: Envirotyping Tools in R](https://github.com/allogamous/EnvRtype):__ <br/>
-A R Interplay between Quantitative Genetics and Ecophysiology for GxE Analysis.
+An R Interplay between Quantitative Genetics and Ecophysiology for GxE Analysis.
 
-> Reference: Germano Costa-Neto and others, _EnvRtype: a software to interplay enviromics and quantitative genomics in agriculture, G3 Genes|Genomes|Genetics_, Volume 11, Issue 4, April 2021, jkab040, [https://doi.org/10.1093/g3journal/jkab040](https://doi.org/10.1093/g3journal/jkab040)
+> __Reference:__ Germano Costa-Neto and others, _EnvRtype: a software to interplay enviromics and quantitative genomics in agriculture, G3 Genes|Genomes|Genetics_, Volume 11, Issue 4, April 2021, jkab040, [https://doi.org/10.1093/g3journal/jkab040](https://doi.org/10.1093/g3journal/jkab040)
 
 * __Framework to Check & Validate Coordinates Data Type:__ (coming soon)
