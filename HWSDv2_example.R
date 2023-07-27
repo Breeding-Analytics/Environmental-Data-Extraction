@@ -11,8 +11,14 @@ Longitude <- c(36.943, 35.991, -6.716)
 
 sites <- data.frame(Location, Latitude, Longitude)
 
-#' query soil attributes for given sites using the HWSD v2 connection object 
-sites <- get_HWSD2(df = sites, con = hwsd2, x = 'Longitude', y = 'Latitude')
+#' query soil attributes for given sites using the HWSD v2 connection object
+#'  
+#' sequence parameter, range between 1 and 12 (max), 1 is the dominant soil. 
+#' returned df has SHARE column refers to share% 
+#' 
+#' layer parameter refers to depth layer (D1 to D7). 
+#' returned df has TOPDEP/BOTDEP columns represent top/bottom layer depth in cm.
+sites <- get_HWSD2(df = sites, con = hwsd2, x = 'Longitude', y = 'Latitude', sequence = 1, layer = 'D1')
 
 #' check the HWSD v2 raster 
 print(hwsd2$raster)
