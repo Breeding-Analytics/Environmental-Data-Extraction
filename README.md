@@ -11,7 +11,8 @@ ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate 
 
 ## Soil Databases
 * __Harmonized World Soil Database version 2.0:__ <br/>
-The [HWSD v2.0](https://gaez.fao.org/pages/hwsd) is a unique global soil inventory providing information on the morphological, chemical, and physical properties of soils at approximately 1 km resolution. Its main objective is to serve as a basis for prospective studies on agro-ecological zoning, food security, and climate change.
+The [HWSD v2.0](https://gaez.fao.org/pages/hwsd) is a unique global soil inventory providing information on the morphological, chemical, and physical properties of soils at approximately 1 km resolution. Its main objective is to serve as a basis for prospective studies on agro-ecological zoning, food security, and climate change.<br/><br/>
+In [this example](HWSDv2_example.R), you can use this [R script](HWSDv2.R) to get the required helper functions to set up and query soil attributes from the HWSD v2 dataset for a given list of sites/locations.
 
 > __Reference:__ FAO & IIASA. 2023. _Harmonized World Soil Database version 2.0_. Rome and Laxenburg. [https://doi.org/10.4060/cc3823en](https://doi.org/10.4060/cc3823en). 
 
